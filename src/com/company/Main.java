@@ -1,18 +1,19 @@
 package com.company;
 
-public class Main{
+public class Main {
 
     public static void main(String[] args) {
-        Employee employee = new Employee();
-        employee.firstName = "John";
-        employee.lastName = "Doe";
-
-        Employee employee1 = new Employee();
-        employee1.firstName = "Mary";
-        employee1.lastName = "Jane";
 
         EmployeePrinter employeePrinter = new EmployeePrinter();
+        EmployeeSalaryPrinter employeeSalaryPrinter = new EmployeeSalaryPrinter();
+
+        Employee employee = new Employee("John", "Doe", 24, "AQA", 25000);
+
         employeePrinter.print(employee);
+        employeeSalaryPrinter.print(employee);
+
+        Employee employee1 = new Employee("", "", 17, "AQA", -5000);
         employeePrinter.print(employee1);
+        employeeSalaryPrinter.print(employee1);
     }
 }
