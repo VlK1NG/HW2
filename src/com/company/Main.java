@@ -13,7 +13,7 @@ public class Main {
         employeeSalaryPrinter.print(employee2);
 
         //array object creating
-        Employee[] employees = new Employee[5];
+        Employee[] employees = new Employee[4];
         employees[0] = new Employee("Sasha", "Petrov", 36,
                 "AQA", POSITION.MIDDLE);
         employees[1] = new Employee("Max", "Verstappen", 24,
