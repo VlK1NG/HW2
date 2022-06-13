@@ -16,5 +16,8 @@ public class EmployeePrinter implements Printer {
         } else if (employee.age < 18) {
             System.out.println("Too young");
         } else System.out.println("Age: " + employee.age);
+
+        System.out.println("Team: " + employee.team);
+        System.out.println("Position: " + employee.position);
     }
 }
